@@ -1,57 +1,36 @@
 name: 🐞 Bug Report
-description: Reportar un error en la documentación
+description: Report an issue in the documentation
 title: "Bug report for: "
 labels: [bug]
 body:
   - type: textarea
-    id: description
+    id: details
     attributes:
-      label: Describe the bug
-      placeholder: Explica claramente el bug.
+      label: Bug details
+      description: Please fill out each section below.
+      value: |
+        **Describe the bug**
+        <!-- Clearly explain the issue -->
+
+        **To Reproduce (step-by-step)**
+        <!-- Numbered steps to reproduce the issue -->
+        1.
+        2.
+        3.
+
+        **Expected behavior**
+        <!-- What should have happened? -->
+
+        **Screenshots (if applicable)**
+        <!-- Drag and drop images if they help explain the issue -->
+
+        **Desktop info (OS, Browser, Version)**
+        <!-- Example: macOS 14.5, Chrome 126 -->
+
+        **Smartphone info (Device, OS, Browser, Version)**
+        <!-- Example: iPhone 13, iOS 17.5, Safari -->
+
+        **Additional context**
+        <!-- Any extra details, links, or related information -->
     validations:
       required: true
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: To Reproduce (step-by-step)
-      placeholder: Describe cómo reproducir el problema.
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behavior
-      placeholder: ¿Qué debería haber pasado?
-    validations:
-      required: false
-
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots (if applicable)
-      description: Puedes subir imágenes si ayuda.
-    validations:
-      required: false
-
-  - type: input
-    id: desktop
-    attributes:
-      label: Desktop info (OS, Browser, Version)
-    validations:
-      required: false
-
-  - type: input
-    id: mobile
-    attributes:
-      label: Smartphone info (Device, OS, Browser, Version)
-    validations:
-      required: false
-
-  - type: textarea
-    id: extra
-    attributes:
-      label: Additional context
-    validations:
-      required: false
