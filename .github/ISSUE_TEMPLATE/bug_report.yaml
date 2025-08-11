@@ -1,0 +1,57 @@
+name: 🐞 Bug Report
+description: Reportar un error en la documentación
+title: "Bug report for: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      placeholder: Explica claramente el bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: To Reproduce (step-by-step)
+      placeholder: Describe cómo reproducir el problema.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: ¿Qué debería haber pasado?
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (if applicable)
+      description: Puedes subir imágenes si ayuda.
+    validations:
+      required: false
+
+  - type: input
+    id: desktop
+    attributes:
+      label: Desktop info (OS, Browser, Version)
+    validations:
+      required: false
+
+  - type: input
+    id: mobile
+    attributes:
+      label: Smartphone info (Device, OS, Browser, Version)
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+    validations:
+      required: false
